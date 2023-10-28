@@ -11,4 +11,6 @@
  
  */
 
-public struct UniversallyUniqueIdentifier {}
+public struct UniversallyUniqueIdentifier {
+    let bytes: UniversallyUniqueIdentifier.Bytes
+}
