@@ -12,5 +12,8 @@
  */
 
 public struct UniversallyUniqueIdentifier {
+    public init(bytes: Bytes) {
+      self.bytes = bytes
+    }
     let bytes: UniversallyUniqueIdentifier.Bytes
 }
