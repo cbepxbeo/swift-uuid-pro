@@ -13,6 +13,9 @@
 
 import Darwin
 
-struct Timestamp {
+public struct Timestamp {
     private let rawValue: Darwin.timespec
+    public init() {
+        self.rawValue = Self.now
+    }
 }
