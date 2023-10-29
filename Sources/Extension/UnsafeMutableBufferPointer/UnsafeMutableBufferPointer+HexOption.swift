@@ -15,5 +15,14 @@ extension UnsafeMutableBufferPointer {
     enum HexOption {
         case lowercase
         case uppercase
+        
+        var table: StaticString {
+            switch self {
+            case .uppercase:
+                "0123456789ABCDEF"
+            case .lowercase:
+                "0123456789abcdef"
+            }
+        }
     }
 }
