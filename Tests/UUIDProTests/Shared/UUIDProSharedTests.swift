@@ -8,6 +8,6 @@
 */
 
 import XCTest
-@testable import SwiftExtension
+@testable import UUIDPro
 
 final class UUIDProSharedTests: XCTestCase {}
