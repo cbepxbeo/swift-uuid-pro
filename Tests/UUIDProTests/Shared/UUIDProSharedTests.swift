@@ -8,7 +8,6 @@
 */
 
 import XCTest
-import Foundation
 @testable import UUIDPro
 
 final class UUIDProSharedTests: XCTestCase {}
