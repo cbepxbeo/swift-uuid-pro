@@ -5,14 +5,14 @@
  Created by: Egor Boyko
  Date: 29.10.2023
  Last Fix: 29.10.2023
- Version: 1.0.0
+ Version: 0.0.1
  
  Status: #Completed | #Not required
  
  */
 
 extension UnsafeMutableBufferPointer {
-    enum HexOption {
+    public enum HexOption {
         case lowercase
         case uppercase
         

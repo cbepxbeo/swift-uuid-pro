@@ -5,7 +5,7 @@
  Created by: Egor Boyko
  Date: 29.10.2023
  Last Fix: 29.10.2023
- Version: 1.0.0
+ Version: 0.0.1
  
  Status: #In progress | #Not decorated
  
@@ -14,8 +14,9 @@
 import Darwin
 
 public struct Timestamp {
-    private let rawValue: Darwin.timespec
     public init() {
         self.rawValue = Self.now
     }
+    
+    let rawValue: Darwin.timespec
 }

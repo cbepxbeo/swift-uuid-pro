@@ -5,7 +5,7 @@
  Created by: Egor Boyko
  Date: 29.10.2023
  Last Fix: 29.10.2023
- Version: 1.0.0
+ Version: 0.0.1
  
  Status: #Completed | #Not required
  
@@ -23,4 +23,15 @@ extension UniversallyUniqueIdentifier {
         guard copied == 16 else { return nil }
         self.init(bytes: output)
     }
+    
+    
+    public init(version: UniversallyUniqueIdentifier.Version){
+        switch version {
+        case .v4:
+            self = .random()
+        case .v7:
+            self = .unixTime()
+        }
+    }
+    
 }
